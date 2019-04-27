@@ -1,5 +1,12 @@
-class TabelaHash:
+# coding=utf-8
+'''
+Classe TabelaHash
 
+Classe responsável por
+'''
+class TabelaHash:
+    # TODO Método init
+    def __init__(self):
 
     # TODO Metodo de busca de um elemento
     def busca_elem(self):
