@@ -2,7 +2,7 @@
 """
 Classe TabelaHash
 
-Classe responsável pelas ações da estrutura de dados tabela hash
+Classe responsável pelas ações da estrutura de dados da tabela hash
 """
 
 from modgeren.codigo.No import No
@@ -11,7 +11,7 @@ from modgeren.codigo.No import No
 CAPACIDADE_INICIAL = 200
 
 
-class TabelaHash:
+class TabelaHash():
 
     # A tabela é inicializada com três propriedades
     def __init__(self):
@@ -53,8 +53,10 @@ class TabelaHash:
         # Se o nó estiver vazio
         if no is None:
             # Retorna nada
+            print('Elemento {} inexistente na tabela.\n'.format(chave))
             return None
         else:
+            print(no.valor)
             # Retorna o valor do no
             return no.valor
 
@@ -118,7 +120,7 @@ class TabelaHash:
             # Returna o resultado após remoção
             return resultado
 
-    # TODO Método de atualização/alteração de um elemento
+    # Método de atualização/alteração de um elemento
     # Entrada: chave - string
     #           valor - qualquer coisa
     # Saída: novas informações do nó ou nada
@@ -140,3 +142,4 @@ class TabelaHash:
             else:
                 # Chave é encontrada
                 no.valor = valor
+                print(no.valor)

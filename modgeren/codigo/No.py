@@ -6,7 +6,7 @@ Esta classe representa o nó utilizado na estrutura de dados de um Nó.
 """
 
 
-class No:
+class No():
 
     def __init__(self, chave, valor):
         self.chave = chave
