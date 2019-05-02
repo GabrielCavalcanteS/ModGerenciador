@@ -2,7 +2,7 @@
 """
 Classe No
 
-Esta classe representa o nó utilizado na estrutura de dados Tabela Hash.
+Esta classe representa o nó utilizado na estrutura de dados de um Nó.
 """
 
 
@@ -12,3 +12,12 @@ class No:
         self.chave = chave
         self.valor = valor
         self.next = None
+
+    def __str__(self):
+        return "<No: (%s, %s), next: %s>" % \
+               (self.chave, self.valor, self.next is not None)
+
+    def __repr__(self):
+        return str(self)
+
+
