@@ -56,7 +56,8 @@ class TabelaHash():
             print('Elemento {} inexistente na tabela.\n'.format(chave))
             return None
         else:
-            print(no.valor)
+            print('Elemento {} tem as informações:\n{} na tabela.\n'
+                  .format(chave, no.valor))
             # Retorna o valor do no
             return no.valor
 
@@ -76,6 +77,8 @@ class TabelaHash():
         if no is None:
             # Cria um nó, adiciona, retorna nada
             self.balde[index] = No(chave, valor)
+            print("Elemento inserido: ")
+            self.busca_elem(chave)
             return
 
         prev = no
@@ -142,4 +145,5 @@ class TabelaHash():
             else:
                 # Chave é encontrada
                 no.valor = valor
-                print(no.valor)
+                print("Valor alterado: ")
+                self.busca_elem(chave)
