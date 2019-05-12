@@ -1,6 +1,8 @@
 """
 Método Principal
 
+Classe que junta as classes Tabela Hash e No.
+Os valores dos métodos são definidos nesta classe.
 """
 from modgeren.codigo import TabelaHash
 from modgeren.codigo import No
