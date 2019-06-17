@@ -22,7 +22,7 @@ class TabelaHash():
     # Método que gera um hash para uma determinada chave
     # Entrada: chave - string
     # Saída: Index de zero até self.capacidade
-    def hash(self, chave):
+    def hash(self, chave) -> str:
 
         hashsum = 0
 
